@@ -3,3 +3,4 @@ package-lock.json
 mochawesome-report
 cypress-combined-report.json
 TestReport
+cypress/integration/examples
