@@ -1,0 +1,7 @@
+{
+  "url": "https://randomuser.me/api/",
+  "method": "GET",
+  "query": "results=1",
+  "body": "Fixtures are a great way to mock data for responses to routes",
+  "status": 200
+}

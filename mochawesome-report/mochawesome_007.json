@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-19T12:41:55.850Z",
+    "end": "2021-08-19T12:41:57.177Z",
+    "duration": 1327,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "28dff99b-79a3-4d58-b6d5-bf36ee681a1a",
+      "title": "",
+      "fullFile": "cypress/integration/api_spec.js",
+      "file": "cypress/integration/api_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "632ecab0-9c19-4974-93ba-d5ee472c618e",
+          "title": "My First API Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "836f86bd-d235-4498-9bf2-d6b2d35a376b",
+              "title": "When I send GET to /api",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Fixtures are a great way to mock data for responses to routes",
+                  "fullTitle": "My First API Test When I send GET to /api Fixtures are a great way to mock data for responses to routes",
+                  "timedOut": null,
+                  "duration": 941,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.log(JSON.stringify(fakeUser));\ncy.request({\n  method: scenario.method,\n  url: scenario.url,\n  qs: scenario.query\n}).should(response => {\n  console.log(response.body);\n  expect(response.status).to.eq(200);\n  expect(response.body).to.have.property('info');\n  expect(response.body.info).to.have.property('version', '1.3');\n});",
+                  "err": {},
+                  "uuid": "359de1f3-5e31-4e8e-af30-2ab61dcbb0b7",
+                  "parentUUID": "836f86bd-d235-4498-9bf2-d6b2d35a376b",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "359de1f3-5e31-4e8e-af30-2ab61dcbb0b7"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 941,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

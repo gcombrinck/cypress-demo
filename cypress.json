@@ -1,0 +1,17 @@
+{
+  "watchForFileChanges": false,
+  "chromeWebSecurity": false,
+  "testFiles": [
+    "api_spec.js"
+  ],
+  "retries": 2,
+  "reporter": "../node_modules/mochawesome/src/mochawesome.js",
+  "reporterOptions": {
+    "overwrite": true,
+    "html": true,
+    "json": true
+  },
+  "baseUrl": "https://opensource-demo.orangehrmlive.com/",
+  "projectId": "d5zibb",
+  "experimentalStudio": true
+}

@@ -1,0 +1,89 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-08-19T12:39:24.739Z",
+    "end": "2021-08-19T12:39:26.420Z",
+    "duration": 1681,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2af6f9b7-671c-47af-888e-937e4b4d50c7",
+      "title": "",
+      "fullFile": "cypress/integration/api_spec.js",
+      "file": "cypress/integration/api_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "An uncaught error was detected outside of a test",
+          "fullTitle": "An uncaught error was detected outside of a test",
+          "timedOut": null,
+          "duration": 518,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "throw err;",
+          "err": {
+            "message": "TypeError: The following error originated from your test code, not from Cypress.\n\n  > Cannot read property 'forEach' of undefined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.",
+            "estack": "TypeError: The following error originated from your test code, not from Cypress.\n\n  > Cannot read property 'forEach' of undefined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n    at Suite.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\\integration\\api_spec.js:109:15)\n    at Suite.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\\integration\\api_spec.js:108:3)\n    at Object../cypress/integration/api_spec.js (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\\integration\\api_spec.js:99:1)\n    at __webpack_require__ (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\\integration\\api_spec.js:20:30)\n    at Object.0 (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\\integration\\api_spec.js:137:18)\n    at __webpack_require__ (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\\integration\\api_spec.js:20:30)\n    at eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\\integration\\api_spec.js:84:18)\n    at eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\\integration\\api_spec.js:87:10)\n    at eval (<anonymous>)",
+            "diff": null
+          },
+          "uuid": "597cc21e-8066-4387-a914-9739c80216e7",
+          "parentUUID": "2af6f9b7-671c-47af-888e-937e4b4d50c7",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "597cc21e-8066-4387-a914-9739c80216e7"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 518,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
